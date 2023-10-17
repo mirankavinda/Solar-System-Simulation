@@ -28,6 +28,7 @@ class Planet:
         self.x = x
         self.y = y
         self.radius = radius
+        self.color = color
         self.mass = mass
 
         self.orbit = []
@@ -44,19 +45,28 @@ class Planet:
         pygame.draw.circle(win, self.color, (x, y), self.radius)
 
 
-
 def main():
     run = True
     clock = pygame.time.Clock()
 
+    sun= Planet(0, 0, 30, YELLOW, 1.98892 * 10**30)
+    sun.sun = True
+
+    planets = [sun]
+
     while run:
         clock.tick(60)
         #WIN.fill()
-        #pygame.display.update()
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
+
+        for planet in planets:
+            planet.draw(WIN)
+
+        pygame.display.update()
+
+
     pygame.quit()
 
 main()
