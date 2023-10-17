@@ -56,7 +56,9 @@ def main():
 
     mars = Planet(-1.524 * Planet.AU, 0, 12, RED, 6.39 * 10**23)
 
-    planets = [sun, earth, mars]
+    mercury = Planet(0.387 * Planet.AU, 0, 8, DARK_GREY, 3.30 * 10**23)
+
+    planets = [sun, earth, mars, mercury]
 
     while run:
         clock.tick(60)
