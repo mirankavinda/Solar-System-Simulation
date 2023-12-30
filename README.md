@@ -9,7 +9,7 @@ To run this simulation, you'll need Python and the Pygame library installed on y
 ```bash
 pip install pygame
 ```
-1. Clone this repository or download the `solar_system_simulation` file.
+1. Clone this repository or download the `Solar-System-Simulation` file.
 
 2. Run the program by executing `main.py`.
 
